@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Playpen Sans;
+    border-radius: 5px;
+}
+.wrap{
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.panel{
+    width: 900px;
+    height: 160px;
+    background-color: rgba(173,102,67,255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2;
+}
+.monitorS{
+    width: 300px;
+    height: 80px;
+    background-color: rgb(211,146,115);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+}
+.Persent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    min-height: 70px ;
+}
+.Persent span{
+    margin-top: 20px;
+}
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 6px solid rgba(173,102,67,255);
+    width: 120px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.btn {
+  background-color: rgb(211,146,115);
+  border: 2px solid rgb(116,76,60);
+  border-radius: 30px;
+  box-shadow: rgb(116,76,60) 4px 4px 0 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  background-color: rgb(172,100,78);
+}
+
+.btn:active {
+  box-shadow: rgb(116,76,60) 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .btn {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+.run{
+    margin-left: 150px;
+}
+
+
+.tooltip {
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #333;
+}
+.blockS{
+    width: 350px;
+    height: 60px;
+    background-color: rgba(149,87,58,255);
+    border-radius: 0px;
+    z-index: 2;
+    
+}
+.blockOval{
+    width: 350px;
+    height: 30px;
+    background-color: rgba(173,102,67,255);
+    border-radius: 0 0 50px 50px;  
+    z-index: 2; 
+}
+.bigBlock{
+    width: 650px;
+    height: 60vh;
+    background-color: rgba(115,75,57,255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.bigBlockOval{
+    width: 900px;
+    height: 30px;
+    background-color: rgba(149,87,58,255);
+    border-radius: 40px 40px 0 0;
+}
+.blockL{
+    width: 950px;
+    height: 100px;
+    background-color: rgba(173,102,67,255);
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+
+}
+.loading {
+    width: 200px;
+    height: 60px;
+    overflow: hidden;
+    background-color: rgb(234, 234, 241);
+    display: flex;
+    padding-top: 15px;
+    padding-left: 10px;
+    border: 6px solid rgb(179, 164, 156);
+}
+
+@keyframes move {
+    0% {
+        top: 10px;
+        left: 0;
+    }
+
+    50% {
+        top: 0;
+        left: 0;
+    }
+
+    100% {
+        top: 10px;
+        left: 0;
+    }
+}
+
+.animBox {
+    width: 20px;
+    height: 10px;
+    background-color: #a28d84;
+    border: 2px solid #b4a4a4;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 5px;
+    position: relative; /* Додайте позиціонування relative */
+    top: 150px; /* Додайте початкове значення top */
+    left: 0; /* Додайте початкове значення left */
+    margin-left: 20px;
+    display: none;
+
+}
+
+.box2 {
+    animation-delay: 0.2s;
+}
+
+.box3 {
+    animation-delay: 0.4s;
+}
+
+.box4 {
+    animation-delay: 0.6s;
+}
+.boxDozator{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.dozator{
+    width: 30px;
+    height: 50px;
+    border-radius: 0 0 50px 50px;
+    background-color: rgba(212,144,115,255);
+    display: flex;
+    z-index: 2;
+}
+.cup{
+position: relative;
+top: 143px;
+left: 10px;
+display: none;
+z-index: 2;
+}
+.pac{
+    width: 80px;
+    height: 80px;
+    border: 6px solid rgba(173,102,67,255);
+    background-color: rgba(212,144,115,255);
+    border-radius: 50%;
+    position: relative;
+    top: 100px;
+
+}
+.pac:hover {
+    background-color: rgb(172,100,78);
+  }
+  
+  .pac:active {
+    box-shadow: rgb(116,76,60) 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+
+   @keyframes top { 0% { bottom: 272px; height: 250px; } 50% { bottom: -144px; height: 117px; } 100%{height: 40px; bottom: -150px;} } 
+.milkBlock{
+    width: 20px;
+    height: 100px;
+    background-color: #fff5e5;
+    position: relative;
+    margin-right: 55px;
+    animation-name: top;
+    animation-duration: 8s;
+    animation-iteration-count: 10;
+    z-index: 1;
+    bottom: 142px;
+}
+.coffeeBlock{
+    width: 20px;
+    height: 100px;
+    background-color: rgb(41, 12, 0);
+    position: relative;
+    animation-name: top;
+    animation-duration: 8s;
+    z-index: 1;
+    bottom: 142px;
+    animation-iteration-count: 10;
+}
+.box{
+    justify-content: space-around;
+    display: none;
+}
+
+  
